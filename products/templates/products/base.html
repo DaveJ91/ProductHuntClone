@@ -1,0 +1,47 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Product Hunt - The best new products in tech.</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="{% static 'products/style.css' %}">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300" rel="stylesheet">
+  </head>
+  <body>
+
+    </nav>
+
+    <nav class="navbar">
+      <a class="navbar-logo" href="#"><img class="navbar-logo-img" src="{% static 'products/logos/ph-logo.png'%}" alt="A big P"></a>
+      <div class="search-container">
+        <form action="#">
+          <button class="submit-button" type="submit"><i class="fa fa-search"></i></button>
+          <input type="text" placeholder="Discover your next favorite thing..." name="search">
+
+        </form>
+      </div>
+      <a href="#">Ask</a>
+      <a href="#">Ship</a>
+      <a href="#">Makers</a>
+      <a href="#">Jobs</a>
+      <a href="#">Events</a>
+      <a href="#">...</a>
+      <a href="#">Jobs</a>
+      <div class="login-signup">
+        <button class="login-button button" type="button" name="login">LOG IN</button>
+        <button class="signup-button button" type="button" name="signUp">SIGN UP</button>
+
+      </div>
+
+    </nav>
+
+
+
+
+
+    {% block content %}
+    {% endblock %}
+
+  </body>
+</html>
