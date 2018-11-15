@@ -8,16 +8,20 @@ body {
   background-color: #F4F6F6;
 }
 
+/* ----------------------------------------------------------
+------------ NAVBAR SECTION ------------------------------
+----------------------------------------------------------*/
+
 .navbar {
   overflow: hidden;
   background-color: white;
-  height: 60px;
+  height: 80px;
   position: relative;
   border-style: solid;
   border-width: thin;
   border-color: #BFC9CA;
   color: #B0B0B0;
-  padding: 20px 10px;
+  padding: 30px 20px;
   margin-top: 0px;
 }
 
@@ -31,11 +35,11 @@ body {
 }
 
 .navbar-logo-img {
-  height: 40px;
+  height: 55px;
   width: auto;
   position: absolute;
-  top: 9px;
-  left: 145px;
+  top: 13px;
+  left: 140px;
 }
 
 .navbar a {
@@ -115,25 +119,26 @@ body {
   height: 30px;
   margin-right: 150px;
   margin-bottom: 10px;
-  margin-top:-6px;
+  margin-top:-10px;
 }
 
 .login-button {
   background-color: white;
   border-radius: 5px;
-  height: 30px;
+  height: 40px;
   width: 65px;
   color: black;
   border-color: #d3d3d3;
   border-style: solid;
   border-width: thin;
   font-size: 11px;
+  margin-right: 10px;
   font-weight: bolder;
 }
 .signup-button {
   background-color: #DA552F;
   border-radius: 5px;
-  height: 30px;
+  height: 40px;
   width: 65px;
   color: white;
   border: none;
@@ -147,4 +152,132 @@ body {
 
 .signup-button:hover {
   background-color: #F7673D;
+}
+
+h1 {
+  font-size: 20px;
+}
+
+h2 {
+  font-size: 13px;
+}
+
+.products-container {
+  background-color: white;
+  margin: 80px;
+  border-radius: 5px;
+  border-style: solid;
+  border-width: thin;
+  border-color: #BFC9CA;
+  padding: 20px 60px;
+
+
+}
+
+.products-container-header {
+  display: row;
+  line-height: 5px;
+}
+
+.products-container-title {
+  display: inline;
+  float: left;
+}
+
+.products-container-sort {
+  display: inline;
+  float: right;
+}
+
+/* ----------------------------------------------------------
+------------ PRODUCTS SECTION ------------------------------
+----------------------------------------------------------*/
+
+hr {
+       display: block;
+       position: relative;
+       padding: 0;
+       margin: 8px auto;
+       height: 0;
+       width: 100%;
+       max-height: 0;
+       font-size: 1px;
+       line-height: 0;
+       clear: both;
+       border: none;
+       border-top: 1px solid #aaaaaa;
+       border-bottom: 1px solid #ffffff;
+    }
+
+
+
+.product-body {
+  display: row;
+}
+
+
+
+.product-icon {
+  display: inline-block;
+  padding: 5px;
+  width: 100%;
+  border-radius: 3px;
+}
+
+.product-icon:hover {
+  background-color: #F4F6F6;
+}
+
+.product-icon img{
+  border-radius: 3px;
+}
+
+.product-overview {
+  display: inline-block;
+  vertical-align: top;
+  padding: 6px;
+}
+.product-overview-title {
+  padding: 5px;
+  margin: 5px;
+  line-height: 10px
+}
+
+
+
+.product-overview-description {
+  display: inline;
+  padding: 5px;
+  margin: 5px;
+  line-height: 10px;
+}
+
+.product-category {
+  padding: 0px 5px 0px 0px;
+  margin: 0px 10px 0px 0px;
+
+}
+
+.product-overview-category-primary {
+  display: inline-block;
+  background-color: #F4F6F6;
+  border-radius: 3px;
+  border-style: solid;
+  border-width:  thin;
+  border-color: #BFC9CA;
+  padding: 5px;
+  margin: 5px 5px 10px 5px;
+  text-transform: uppercase;
+  font-size: 10px;
+  text-align: center;
+}
+
+.product-overview-extra-categories {
+  display: inline;
+  font-size: 13px;
+}
+
+.product a {
+  text-decoration: none;
+  color: black;
 }

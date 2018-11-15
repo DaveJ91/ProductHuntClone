@@ -1,0 +1,15 @@
+{% extends 'products\product_list.html' %}
+
+{% block content %}
+
+<h1>{{ product.title }}</h1>
+
+{% if product.image %}
+<img src="{{ product.image.url }}" alt="">
+{% endif %}
+
+<p>{{ product.short_description }}</p>
+
+<p>Found by: {{ product.hunter }}</p>
+
+{% endblock %}
